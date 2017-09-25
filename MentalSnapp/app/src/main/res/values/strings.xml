@@ -1,0 +1,468 @@
+<resources>
+    <string name="app_name">Mental Snapp</string>
+    <string name="queued_exercises">Queued Exercises</string>
+    <string name="profile">Profile</string>
+    <string name="report_an_issue">Technical support</string>
+    <string name="more">More</string>
+    <string name="login_message_1">Mental Snapp is a video diary service for people actively managing their mental health.
+We believe in the power of film to change outcomes Try it for yourself - record your own story.</string>
+    <string name="email">EMAIL</string>
+    <string name="email_small">Email</string>
+    <string name="enter_your_email_msg">Enter your Email</string>
+    <string name="password">Password</string>
+    <string name="password_hint">\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_message_2">Do not have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email_not_valid_text">Please enter valid email</string>
+    <string name="password_not_valid_text">Enter password</string>
+    <string name="email_empty">Enter email</string>
+    <string name="enter_your_first_name_msg">Enter your first name</string>
+    <string name="enter_your_email_add_msg">Enter your email address</string>
+    <string name="enter_your_phone_msg">Enter your Phone number (Optional)</string>
+    <string name="enter_your_dob_msg">Enter your Date of birth (Optional)</string>
+    <string name="phone">Phone (Optional)</string>
+    <string name="dob">Date of Birth (Optional)</string>
+    <string name="i_am">I AM (Optional)</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_account_msg">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="invalid_username">Username should be alphabets and numbers only</string>
+    <string name="password_length_error">Password should contain minimum 6 characters</string>
+    <string name="password_alphanumeric_error">Password should be alphanumeric</string>
+    <string name="name_incorrect_error">Name should be alphanumeric</string>
+    <string name="enter_valid_number">Please enter valid phone</string>
+    <string name="enter_new_password">Please enter new password</string>
+    <string name="enter_valid_password">Please enter password</string>
+    <string name="enter_confirm_new_password">Please enter confirm new password</string>
+    <string name="enter_confirm_password">Please enter confirm password</string>
+    <string name="password_dont_match">Password and confirm password fields don\'t match</string>
+    <string name="change_password">Change Password</string>
+    <string name="delete_profile">DELETE PROFILE</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="reenter_new_password">Re-Enter new password</string>
+    <string name="enter_current_password">Please enter current password</string>
+    <string name="reenter_password_dont_match">Re-Enter new password does not match with new password</string>
+    <string name="password_successful">Password changed successfully</string>
+    <string name="forgot_password_message_1">Enter your email address below and we\'ll send you your password</string>
+    <string name="reenter_password">Re-Enter password</string>
+    <string name="forgot_password_message_2">Enter your new password received in the email</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="go_to_email">Forgot password link has been sent to your email</string>
+    <string name="issue_title">Add your title</string>
+    <string name="description">Description</string>
+    <string name="write_your_text">Write your text</string>
+    <string name="attach_image">Attach image</string>
+    <string name="enter_description">Please enter description</string>
+    <string name="enter_title">Please enter title</string>
+    <string name="sent_successfully">Sent successfully</string>
+    <string name="enter_valid_dob">Please enter Date of birth</string>
+    <string name="sign_up_successful_message">A confirmation link has been sent to your email.</string>
+    <string name="password_invalid_message">Password should contain alphanumeric characters</string>
+    <string name="minimum_password_length_message">Password should contain minimum 6 characters</string>
+    <string name="skip">Skip</string>
+    <string name="no_internet">You have lost your network connection, please check your connection and try again.</string>
+    <string name="successfully_updated">Successfully updated</string>
+    <string name="change_screenshot">Change screenshot</string>
+    <string name="accept_tnc_message_1">I accept to the</string>
+    <string name="accept_tnc_message_2">Terms and conditions</string>
+    <string name="terms_message1"><b>Terms and Conditions</b></string>
+    <string name="terms_message2">Last updated: January 03, 2017</string>
+    <string name="terms_message3"><![CDATA[PLEASE READ THESE TERMS AND CONDITIONS (\"TERMS\" ) CAREFULLY BEFORE
+    USING THE MENTAL SNAPP MOBILE APPLICATION (THE \"APP\") OPERATED BY  MENTAL SNAPP LTD, WITH COMPANY
+    NUMBER 09649971, HAVING ITS  REGISTERED OFFICE AT 101 BRAMSHOT AVENUE, LONDON, ENGLAND, SE7 7HX
+    (\"US\", \"WE\", \“OUR\" OR \“MENTAL SNAPP\”).\n\nYOUR ACCESS TO AND USE OF THE APP IS CONDITIONAL ON
+    YOUR  ACCEPTANCE OF AND COMPLIANCE WITH THESE TERMS, OUR PRIVACY POLICY  AND OUR COOKIES POLICY. THESE TERMS APPLY TO
+    ALL VISITORS, USERS AND  OTHERS WHO ACCESS OR USE THE APP.\n\nBY DOWNLOADING AND INSTALLING THE APP ON YOUR DEVICE YOU
+    AGREE TO  BE BOUND BY THESE TERMS. IF YOU DISAGREE WITH ANY PART OF THE TERMS  THEN YOU MAY NOT ACCESS THE APP.]]></string>
+    <string name="terms_message4"><b>IMPORTANT NOTICE</b>: The App permits you to record information relating to your mental
+        health. We do not, and the App is not intended to be used, to offer any medical or other  healthcare advice to you.\n\n
+        <b>ABOUT THE APP</b>\n\nThe key features of the App include:\n\n\u2022 The ability to post, link, store, share and
+        otherwise make available certain  information, text, graphics, videos, or other material relating to your mental
+        health  (“Content”);\n\n\u2022 Rating your Content according to mood and graphs produced over time of  variations
+        in mood as well as usage of the App; and\n\n\u2022 Respond to guided exercises that are designed to support you to gain
+        insight into  your mental health.</string>
+    <string name="terms_message5"><b>REGISTRATION</b> Once you have downloaded the App, you must register an account to access
+        and use the App by completing the online registration form on the App (“Account”).\n\nYou may not use as a username
+        the name of another person or entity or that is not lawfully available for use, a name or trade mark that is subject
+        to any rights of another person or entity other than you without appropriate authorisation, or a name that is otherwise
+        offensive, vulgar or obscene.\n\nUpon the completion and submission of the online registration form on the App, you
+        shall be sent a verification email (“Verification Email”) to the email address you provided on the registration form.
+        This Verification Email will contain details of how to activate your Account. Your Account will not be accessible until
+        you have accepted these Terms.\n\nYou shall keep your registration details for the App (“Login Details”) confidential
+        and secure. Without prejudice to any other rights and remedies available to you, we reserve the right to promptly disable
+        your Login Details and suspend your access to the App in the event that we have any reason to believe you have breached
+        any part of these Terms.\n\nNotwithstanding the foregoing, we reserve the right to:\n\n\u2022 accept or reject your application to
+        register for any reason; and\n\n\u2022 suspend your Account and/or refuse you access to the App (partly or wholly) if you breach
+        any of the provisions hereunder.\n\nYou agree not to disclose your password to any third party. You must notify us
+        immediately upon becoming aware of any breach of security or unauthorised use of your Account.\n\nYou hereby warrant that
+        the information provided by you to us is true, accurate, complete, and current at all times. Failure to do so constitutes
+        a breach of the Terms, which may result in immediate termination of your Account.</string>
+    <string name="terms_message6"><b>ACCESSING THE APP</b>\nSubject to these Terms, we hereby grant to you a non-exclusive,
+        non-transferable (without  a right to sub-licence) and terminable licence to access the App. This licence is in
+        respect  of your use of the App for your own personal, non-commercial purposes only.\n\nExcept as expressly permitted
+        in these Terms, you shall not, and shall not permit others to  (i) modify, translate, create derivative copies of or
+        copy the App, in whole or in part; (ii)  reverse engineer, decompile, disassemble or otherwise reduce the object
+        code of the App  to source code form; (iii) distribute, sub-licence, assign, share, timeshare, sell, rent, lease,
+        grant a security interest in, use for service bureau purposes, or otherwise transfer the App  or your right to use the
+        App; (iv) remove or modify any copyright, trademark, or other  proprietary notices belonging to Us or our licensors
+        contained within the App; or (v) use  the App in any manner not expressly authorised by these Terms.\n\nWe will use our
+        reasonable endeavours to make the App available to you at all times, but  we cannot guarantee that the App will be
+        uninterrupted or fault free. Routine and essential  maintenance and upgrades may be required from time to time to improve,
+        add functions or  restore the App.\n\nWe may suspend your access to the App and/or terminate your Account, wholly or
+        partly,  at any time without notice to you if any of the following events occur:\n\n\u2022 Our third party service and
+        network providers cease to make the third party services  or network available to us;\n\n\u2022 We are undertaking repairs
+        , planned maintenance or upgrades to the App;\n\n\u2022 We believe that you or someone using your login details has failed
+        to comply with  one or more of these Terms;\n\n\u2022 We believe that there has been fraudulent use, misuse or abuse of
+        features or  functionalities of the App (in whole or in part);\n\n\u2022 We believe that you have provided us with any
+        false, inaccurate or misleading  information; and\n\n\u2022 We believe that you are not acting in a personal capacity.</string>
+    <string name="terms_message7"><b>YOUR OBLIGATIONS</b>\nYou shall, at all times:\n\n\u2022 Comply with all applicable
+        laws, regulations, directives and legislations in your use  of the App;\n\n\u2022 Ensure that the device you use to
+        access the App complies with any minimum  specification released by us from time to time and required for your device to
+        use all  the features and functionality of the App and contains adequate anti-virus protection  and you acknowledge that we
+        will not be liable for any loss or damage caused by a  virus or other technologically harmful material that may infect your
+        device due to  your use of the App, and you hereby release and discharge us from any liability for  such loss or damage;\n\n
+        \u2022 Comply with any guidelines provided or reasonable instructions issued by us from  time to time in respect of your use
+        of the App;\n\n\u2022 Not do anything likely to impair, interfere with or damage or cause harm or distress  to any persons
+        using the App;\n\n\u2022 Not use the App and/or any knowledge, information, know-how and/or expertise  derived from using
+        the App to commit any criminal act; and\n\n\u2022 Not use the App and/or do anything that shall or be reasonably deemed to
+        infringe  any intellectual property rights or other rights of any third parties.\n\nIn addition to the obligations above,
+        you shall not submit to appear on the App any  information (including any data, comments, images, videos, third party URL
+        links or other  material whatsoever in any format) that may reasonably be deemed to be offensive, illegal,  inappropriate or
+        that in any way:\n\n\u2022 Promotes racism, bigotry, hatred or physical harm of any kind against any group or  individual;\n\n
+        \u2022 Harasses or advocates harassment of another person;\n\n\u2022 Displays pornographic or sexually explicit material;\n\n
+        \u2022 Promotes any conduct that is abusive, threatening, obscene, defamatory or  libelous;\n\n\u2022 Promotes any illegal
+        activities;\n\n\u2022 Provides instructional information about illegal activities, including violating  someone else’s privacy
+        or providing or creating computer viruses;\n\n\u2022 Promotes or contains information that you know or believe to be inaccurate,
+        false or  misleading;\n\n\u2022 May be deemed to be a misrepresentation of any facts;\n\n\u2022 Engages in or promote
+        commercial activities and/or sales, including but not limited  to contests, sweepstakes, barter, advertising and pyramid
+        schemes, without our  prior written consent; or\n\n\u2022 Infringes any rights of any third party including but not limited
+        to intellectual property  rights.\n\nWhen you upload Content, you give to Mental Snapp Ltd a worldwide, non-exclusive,
+        royalty-free, transferable licence (with right to sub-licence) to use, reproduce, distribute  and display that Content in
+        connection with the provision of the App. We also reserve the  right to remove any Content displayed on the App at any time
+        and without notice at our  sole discretion.\n\nUnless otherwise explicitly stated by us, we do not vet, verify the accuracy,
+        correctness  and completeness any of your Content created, submitted and/or provided by you through  the App or otherwise to
+        determine whether it may result in any liability to any third party.  You hereby warrant that you have the rights to use all
+        such information, data and material  in the manner set out in these Terms. WE EXPRESSLY EXCLUDE OUR LIABILITY FOR  ANY LOSS OR
+        DAMAGE ARISING FROM THE USE OF OUR APP BY YOU IN  CONTRAVENTION OF THIS SECTION (YOUR OBLIGATIONS).\n\nIn the event that we,
+        in our sole and absolute discretion, consider that you have breached  any of these Terms, we reserve the right to take any
+        action that we deem to be necessary,  including without limitation, disabling your login details, suspending your use of
+        and  access to the App; and in the case of illegal use, the instigation of legal proceedings  and/or disclosure of such
+        information to law enforcement authorities or third parties as we  reasonably feel is necessary.\n\n<b>APP-STORES</b>\n
+        You acknowledge and agree that:\n\n\u2022 We are in no way linked, connected or affiliated with Apple, Google, Microsoft
+        or  any other app-store provider;\n\n\u2022 Access to and use of the App may be limited by your network carrier and will
+        be  limited if you are attempting to access the App from outside the United Kingdom;\n\n\u2022 You acknowledge you will not
+        be able to access and use certain functionalities of  the App unless You have internet access through a GPRS, 3G, 4G or
+        Wi-Fi  connected device. All traffic charges or access charges incurred due to the use of  the App are subject to your
+        agreed terms with your network provider;\n\n\u2022 Neither your airtime provider nor any app-store or app-store operator
+        (including but  not limited to the “App-Store” or “Google Play” store) shall bear any  responsibility or liability
+        whatsoever in relation to sale, distribution, functionality,  accessibility, performance or non-performance of the App;\n\n
+        \u2022 Your airtime provider and any app-store or app-store operator (including but not  limited to the “App-Store” or
+        “Google Play” store) are third party beneficiaries in respect of  this clause and accordingly have the right to enforce the provisions
+        of this clause;\n\n\u2022 We are solely responsible for providing any support and maintenance in respect of  the App; and\n\n
+        \u2022 You will comply with any third party terms and conditions which may be applicable  from time to time in relation to
+        your use of the App.\n\nFurther, where you have obtained the App from the Android ‘Google Play’ store, you acknowledge  and agree that:\n\n
+        \u2022 You are not located in a country that is subject to a US Government embargo or  that has been designated by the US
+        Government as a ‘terrorist supporting’ country;\n\n\u2022 You are not listed on any US Government list of prohibited or
+        restricted parties;\n\n\u2022 These Terms are concluded between you and us and accordingly Android is not a  party to these
+        Terms;\n\n\u2022 Android has no obligation to provide any maintenance and support services in respect  of the App;\n\n\u2022 If
+        the App fails to conform to any warranty herein, you may notify Android following  which Android will refund you the purchase
+        price paid for the App (if any). Android will  have no further liability whatsoever in respect of any such failure;\n\n
+        \u2022 Android has no responsibility to address any claims by you or any third party  whatsoever with respect to the App;\n\n
+        \u2022 Android shall not be responsible for any claims made by any third party that the App  infringes any third party intellectual
+        property rights; and\n\n\u2022 \'Google Play’ and ‘Android’ are trade marks of Android Inc.\n\n<b>INTELLECTUAL PROPERTY</b>\nOther
+        than in relation to any links to third party websites and your Content, we own or have  a licence to use all right,
+        title and interest in and to the App, including without limitation all  copyright and any other intellectual property
+        rights therein. These Terms shall not be  construed to convey title to or ownership of the App or the content
+        contained therein to  you. All rights in and to the App or content not expressly granted to you are reserved by  us.\n\n
+        You are expressly prohibited from removing, modifying, altering or using any registered or  unregistered marks/logos
+        owned by us, and doing anything which may be seen to take  unfair advantage of our reputation and goodwill or could be
+        considered an infringement of  any of the intellectual property rights owned and/or licensed to us, without first
+        obtaining  our written permission.\n\n<b>TERMINATION</b>\n\nYour ability to access and use the App shall continue
+        until terminated in accordance with  these Terms.\n\nWe may terminate or suspend your Account immediately, without
+        prior notice or liability,  for any reason whatsoever, including without limitation if you breach any part of these
+        Terms.\n\nYou may terminate your Account at any time by notifying us in writing by email, requesting  that your Account
+        is terminated.\n\nOn termination of your use of the App in accordance with these Terms:\n\n\u2022 You will no longer be
+        entitled to access the App; and\n\n\u2022 Unless otherwise revoked by us, your access to the App will be limited for the
+        purpose of downloading video Content which you have submitted to the App prior to termination. This limited access
+        shall be available to you for a period of 30 days from the date that your Account is terminated. Thereafter, all Content
+        that you have submitted and/or made available to the App shall be removed.\n\n\u2022 Mental Snapp is committed to returning all
+        video Content that you have submitted and/or made available to the App. Without prejudice to any of our rights in these
+        Terms, if requested by you, we hereby agree to remove all Content that you have submitted to the App (only to the extent
+        that we are not bound by any existing law and legislation to retain such Content).\n\n<b>WARRANTIES AND LIABILITY</b>\n
+        Links to third party websites and companies may appear on the App. We accept no responsibility for the availability,
+        suitability, reliability or content of such third party websites and do not necessarily endorse the views expressed
+        within them.\n\n<b>We are responsible to you for foreseeable loss and damage caused by us.</b> If we fail to comply with
+        these Terms, we are responsible for loss or damage you suffer that is a foreseeable result of our breaking these Terms
+        or our failing to use reasonable care and skill, but we are not responsible for any loss or damage that is not
+        foreseeable. Loss or damage is foreseeable if either it is obvious that it will happen or if, at the time you accepted
+        these Terms, both we and you knew it might happen.\n\n<b>We do not exclude or limit in any way our liability to you where
+        it would be unlawful to do so.</b> This includes liability for death or personal injury caused by our negligence or the
+         negligence of our employees, agents or subcontractors or for fraud or fraudulent misrepresentation.\n\n<b>Our maximum aggregate
+        liability to you.</b> If you suffer loss or damage that is a foreseeable result of our breaching these Terms, our failing
+        to use reasonable care and skill or otherwise, the maximum amount you may claim from us shall be one hundred pounds
+        sterling (£100.00).\n\n<b>When we are liable for damage to your property.</b> If defective digital content that we
+        have supplied damages a device or digital content belonging to you, we will either repair the damage or pay you
+        compensation. However, we will not be liable for damage that you could have avoided by following our advice to apply
+        an update offered to you or for damage that was caused by you failing to correctly follow installation instructions or to
+        have in place the minimum system requirements advised by us.\n\n<b>We are not liable for business losses.</b> The App
+        is for domestic and private use. If you use the App for any commercial, business or resale purpose we will have no
+        liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity.\n\n
+        <b>Please back-up content and data used with the App.</b> We recommend that you back up any Content used in connection
+        with the App, to protect yourself in case of problems with the App.\n\n<b>Check that the App is suitable for you.</b>
+        The App has not been developed to meet your individual requirements. Please check that the facilities and functions of
+        the App (as described on the relevant app-store site) meet your requirements.\n\n<b>We are not responsible for events outside
+        our control.</b> If our provision of the App or support for the App is delayed by an event outside our control then we
+        will contact you as soon as possible to let you know and we will take steps to minimise the effect of the delay. Provided
+        we do this we will not be liable for delays caused by the event.\n\n<b>Your use of the App is at your sole risk.</b> The
+        App is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. All content, information and material provided
+        to you as part of the App does not constitute advice or a recommendation and therefore it should not be solely relied
+        on to assist in making or refraining from making a decision, or to assist in deciding on a course of action. We shall
+        not be responsible in any way for any advice which may be provided to you based on your Content. The App is provided
+        without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability
+        , fitness for a particular purpose, non-infringement or course of performance.\n\n<b>You must be 18 or over to accept these Terms
+         and use the App</b>\nYou must be 18 or over to accept these Terms and use the App.\n\n<b>You may not transfer the App to
+            someone else</b>\nWe are giving you personally the right to use the App. You may not transfer the App to someone
+        else, whether for money, for anything else or for free. If you sell any device on which the App is installed, you must
+        remove the App from it.\n\n<b>Changes to these Terms</b>\nWe may need to change these Terms to reflect changes in law
+        or best practice or to deal with additional features which we introduce.\n\nWe will give you notice of any change by
+        notifying you of a change when you next start the App or by e-mail. By continuing to use the App after such alteration,
+        you will be deemed to have accepted any amendment to these Terms.\n\n<b>Updates to the App</b>\nFrom time to time we
+        may automatically update the App to improve performance, enhance functionality, reflect changes to the operating system
+        or address security issues. Alternatively we may ask you to update the App for these reasons.\n\nIf you choose not to install
+        such updates or if you opt out of automatic updates you may not be able to continue using the App.\n\n<b>If someone else
+            owns the phone or device you are using</b>\nIf you download the App onto any phone or other device not owned by you, you
+        must have the owner’s permission to do so. You will be responsible for complying with these Terms, whether or not you own
+        the phone or other device.\n\n<b>WE MAY TRANSFER TO SOMEONE ELSE</b>\nWe may transfer our rights and obligations under
+        these Terms to another organisation. We will always tell you in writing if this happens and we will ensure that the
+        transfer will not affect your rights under these Terms.\n\n<b>YOU NEED OUR CONSENT TO TRANSFER YOUR RIGHTS TO SOMEONE
+        ELSE</b>\nYou may only transfer your rights or your obligations under these Terms to another person if we agree in
+        writing.\n\n<b>NO RIGHTS FOR THIRD PARTIES</b>\nThese Terms do not give rise to any rights under the Contracts (Rights
+        of Third Parties) Act 1999 to enforce any part of these Terms.\n\n<b>IF A COURT FINDS PART OF THESE TERMS ILLEGAL, THE
+        REST WILL CONTINUE IN FORCE</b>\n Each of the paragraphs of these Terms operates separately. If any court or
+        relevant authority decides that any of them are illegal, unlawful or otherwise unenforceable, the remaining paragraphs
+        will remain in full force and effect.\n\n<b>EVEN IF WE DELAY IN ENFORCING THESE TERMS, WE CAN STILL ENFORCE IT LATER</b>\n
+        Even if we delay in enforcing these Terms, we can still enforce it later. If we do not insist immediately that you do
+        anything you are required to do under these Terms, or if we delay in taking steps against you in respect of your breaking
+        these Terms, that will not mean that you do not have to do those things and it will not prevent us taking steps against you
+        at a later date.\n\n<b>WHICH LAWS APPLY TO THESE TERMS AND WHERE YOU MAY BRING LEGAL PROCEEDINGS</b>\nThese Terms are governed
+        by English law and you can bring legal proceedings in respect of the App in the English courts.\n\n<b>PRIVACY POLICY</b>\nWe will
+        only use your Personal Information (as defined in our Privacy Policy) in accordance with our Privacy Policy.\n\n You agree that
+        our Privacy Policy constitutes part of these Terms. You must read our Privacy Policy before you use the App.\n\n<b>CONTACT
+        US</b>\nIf you have any questions about these Terms, please contact us by email at feedback@mentalsnapp.com, by telephone
+        on 08009708363 or by post at Mental Snapp Ltd, 101 Bramshot Avenue,\nLondon, SE7 7HX.</string>
+    <string name="tnc_title">Terms and Conditions</string>
+    <string name="check_tnc_message">Please agree to Terms and conditions</string>
+    <string name="privacy_policy_title">Privacy policy</string>
+    <string name="privacy_policy_message1"><b>Privacy Policy</b></string>
+    <string name="privacy_policy_message2">Last updated: January 03, 2017</string>
+    <string name="privacy_policy_message3">Mental Snapp Ltd (\"us\", \"we\", or \"our\") operates the
+        Mental Snapp mobile application (the \"App\").\n\nThis page informs you of our policies regarding the
+        collection, use and disclosure of Personal  Information when you use our App.\n\nWe will not use or share your
+        information with anyone except as described in this Privacy Policy.\n\nWe use your Personal Information for providing
+        and improving the App. By using the App, you  agree to the collection and use of information in accordance with this
+        policy. Unless otherwise  defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as
+        in our  terms and conditions.\n\nBy using the App, you agree to the collection and use of information in accordance with
+        this policy.\n\n<b>How Do We Collect Your Information?</b>\n\nWhile using our App, we may collect certain personally
+        identifiable information that can be used to  contact or identify you. Personally identifiable information may include,
+        but is not limited to:\n\n\u2022 Name;\n\u2022 Video Content relating to mental health;\n\u2022 Contact information such as email addresses
+        and telephone numbers; and\n\u2022 Demographic information such as post code, preferences and interests\n\n(together \"Personal Information\").\n\nWhen you access the App by or through a mobile device, we may also collect certain information
+        automatically, including, but not limited to, the type of mobile device you use, your mobile device  unique ID, the IP
+        address of your mobile device, your mobile operating system, the type of mobile  Internet browser you use and other
+        statistics.\n\n<b>How Do We Use Your Information?</b>\n\nWe use your Personal Information for providing and improving
+        the App. This includes:\n\n\u2022 Providing and managing your Account;\n\u2022 Providing and managing your access to the App;\n\u2022 Personalising
+        and tailoring your experience when accessing the App;\n\u2022 Responding to communications from you;\n\u2022 Market research; and\n
+        \u2022 Analysing your use of the App and gathering feedback to enable us to continually improve the App  and your user experience.\n\n
+        With your permission and/or where permitted by law, we may also use your Personal Information  for marketing purposes which
+        may include contacting you with newsletters, marketing or  promotional materials and other information that may be of interest
+        to you. You may opt out of  receiving any, or all, of these communications from us by following the unsubscribe link or
+        instructions provided in any email we send.\n\n<b>How and Where Do We Store Your Information?</b>\nThe data that we collect
+        from you will not be transferred to, or stored at, a destination outside the  European Economic Area (EEA). However, data
+        collected may be processed by staff operating  outside the EEA who work for us or for one of our suppliers. These staff may
+        be engaged in the  fulfilment of your request, order or reservation and the provision of support services. We will take
+        all steps reasonably necessary to ensure that your data is treated securely and in accordance with  this Privacy Policy.\n\n
+        We only keep your Personal Information for as long as we need to in order to use it as described  above, and/or for as long
+        as we have your permission to keep it.\n\nIt is important to remember that the transmission of information via the internet
+        may not be  completely secure and that you are advised to take suitable precautions when transmitting to us  information via
+        the internet.\n\nIf your personal details change, you may update them by accessing the App. If you have any  questions about
+        how we use information collected which relates to you, please contact us using the  contact details provided below.\n\n<b>Who
+        Do We Transfer Your Information To?</b>\nWe may employ third party companies and individuals to facilitate our App, to
+        provide the App on  our behalf, to perform App-related services or to assist us in analysing how our App is used. These
+        third parties have access to your Personal Information only to perform these tasks on our behalf and  are obligated not to
+        disclose or use it for any other purpose.\n\nWe will disclose your Personal Information where required to do so by law or
+        in accordance with an  order of a court of competent jurisdiction, or if we believe that such action is necessary to
+        comply  with the law and the reasonable requests of law enforcement or to protect the security or integrity of  our App.\n\n
+        If Mental Snapp Ltd is involved in a merger, acquisition or asset sale, your Personal Information  may be transferred. We
+        will provide notice before your Personal Information is transferred and  becomes subject to a different Privacy Policy. In
+        the event of such a transfer of information, your  rights under the Data Protection Act 1998 are not affected.\n\nIn the
+        event that a dispute arises with regards to the international transfer of data, you agree that the  courts of England and
+        Wales shall have exclusive jurisdiction over the matter.\n\n<b>How Do I Access My Information/Data?</b>\nThe Data Protection
+        Act 1998 (\"Act\") gives you the right to access information that we may hold  about you. Any access request will be processed
+        by us within a reasonable amount of time.\n\nAny access request will be subject to a fee of £5 to meet our costs in providing
+        you with details of  the information we hold about you.\n\n<b>Will the App Contain Links to Third Party Websites?</b>\nWe
+        do not disclose information about identifiable individuals to our advertisers, but our App may  contain links to other sites
+        that are not operated by us. We use these third party links to support and  enhance your experience of the App.\n\nYou should
+        note that clicking on a third party link may direct you to that third party\'s site. We  strongly advise you to review the
+        privacy policy of every site you visit. We have no control over,  and assume no responsibility for the content, privacy policies
+        or practices of any third party sites or  services.\n\n<b>Do We Collect Personal Information From Children?</b>\nOur App
+        does not address anyone under the age of 18.\n\nWe do not knowingly collect personally identifiable information from anyone
+        under 18. If you are a  parent or guardian and you are aware that your child has provided us with Personal Information,
+        please contact us. If we become aware that we have collected Personal Information from anyone  under the age of 18 without
+        verification of parental consent, we will take steps to remove that  information from our servers.\n\n<b>Changes to This
+        Privacy Policy</b>\nWe may update our Privacy Policy from time to time. We will notify you of any changes by posting
+        the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for  any changes. Changes
+        to this Privacy Policy are effective when they are posted on this page.\n\nIf we make any material changes to this Privacy
+        Policy, you will be notified either through the  email address you have provided us, by placing a prominent notice on our
+        App, or by displaying the  new privacy policy on-screen which you may be required to read and accept in order to continue
+        your use of the App.\n\n<b>Jurisdiction</b>\nThis Policy shall be governed and construed in accordance with the laws of
+        England and Wales,  without regard to its conflict of law provisions.\n\n<b>Contact Us</b>\nIf you have any questions
+        about these Terms, please contact us by email at  feedback@mentalsnapp.com, by telephone on 08009708363 or by post at
+        Mental Snapp Ltd, 101  Bramshot Avenue, London, SE7 7HX.\n\nPlease ensure that your query is clear, particularly if it is a
+        request for information about the  Personal Information we hold about you.</string>
+    <string name="invalid_credentials_message">Invalid credentials</string>
+    <string name="exercise_title">Exercise</string>
+    <string name="videos_title">Videos</string>
+    <string name="insights_title">Insights</string>
+    <string name="record_title">Record</string>
+
+
+    <string name="text_photo_library">Photo Library</string>
+    <string name="text_take_photo">Take Photo</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_delete_photo">Delete Photo</string>
+    <string name="add_video_name">Add video name</string>
+    <string name="add_tags">Add tags with #</string>
+    <string name="add_feelings">Add Feeling</string>
+    <string name="add_feeling_description_hint">What\'s going on? you can write about it here. You can also use hashtags(like #happy or #tired).</string>
+    <string name="best_mood_capital">THE BEST</string>
+    <string name="very_good_mood_capital">VERY GOOD</string>
+    <string name="good_mood_capital">GOOD</string>
+    <string name="ok_mood_capital">OK</string>
+    <string name="bad_mood_capital">BAD</string>
+    <string name="very_bad_mood_capital">VERY BAD</string>
+    <string name="worst_mood_capital">THE WORST</string>
+    <string name="best_mood">The Best</string>
+    <string name="very_good_mood">Very Good</string>
+    <string name="good_mood">Good</string>
+    <string name="ok_mood">Ok</string>
+    <string name="bad_mood">Bad</string>
+    <string name="very_bad_mood">Very Bad</string>
+    <string name="worst_mood">The Worst</string>
+    <string name="set_mood_title">Set mood</string>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="feelings_title">Feelings</string>
+    <string name="select_mood">Please select a mood</string>
+    <string name="select_feeling">Please select a feeling</string>
+    <string name="none">None</string>
+    <string name="done">Done</string>
+    <string name="no_videos_to_show">No videos to show</string>
+    <string name="okay">Okay</string>
+    <string name="alert_message_camera">You can record videos that are up to 2 minutes long.</string>
+    <string name="signup_logo_message">Record your own story</string>
+    <string name="other">Other</string>
+    <string name="video_downloaded">You have successfully downloaded the video</string>
+    <string name="search">Search</string>
+    <string name="all_video_downloaded">All videos downloaded successfully</string>
+    <string name="goodbye_message">Thank you for using Mentalsnapp. We\'re sorry to see you go. Hope you enjoyed telling your story and meet you again soon.</string>
+    <string name="schedule_time_error">Scheduling time should be minimum 10 minutes ahead from present time</string>
+    <string name="schedule_message">You have exercise scheduled for:</string>
+    <string name="bar_chart_loading_message">No data available</string>
+    <string name="schedule_delete_message">Successfully removed</string>
+    <string name="email_feedback">feedback@mentalsnapp.com</string>
+    <string name="feedback_subject">: Feedback for mentalsnapp android app</string>
+    <string name="onboarding_title">How to use</string>
+    <string name="record_onboard_title">Video Recording Guides</string>
+    <string name="enjoy_telling_your_story">Enjoy telling your story</string>
+    <string name="enter_your_last_name_msg">Enter your last name</string>
+    <string name="finish">Finish</string>
+
+    <string-array name="onboarding_titles">
+        <item>Welcome!</item>
+        <item>How it works</item>
+        <item>Exercises</item>
+        <item>Exercise questions</item>
+        <item>Mood rating</item>
+        <item>Insights</item>
+        <item>My videos</item>
+        <item>Your data</item>
+        <item>Deleting and downloading</item>
+        <item>Your profile</item>
+        <item>One last thing</item>
+        <item>Tap to start immediately</item>
+    </string-array>
+
+    <string-array name="onboarding_description">
+        <item>Mental Snapp is a new video diary service for people actively managing their mental health.\n\n
+            The purpose of recording video diaries with Mental Snapp is to make your voice and awareness of your mental health useful to you. We
+            believe that you already have the skills to manage your mental health successfully, and creating video diaries on a
+            regular basis can draw out the expertise you have already.</item>
+        <item>We encourage you to record freeform or in your own words as much as possible so it becomes part and parcel of your
+            routine. You can set regular times to record, whenever the time is right for you.\n\nWe recognise this may take a bit of
+            getting used to! We’ve created some optional prompts to help you through the first few videos.</item>
+        <item>You might have days when you can’t think of what you want to say, don’t worry, we’ve come up with some guided exercises
+            to help you through.\n\nThe guided exercises are split into the following sections:\nEveryday coping\nWellbeing\n
+            Purpose\nRelationships\nSOS</item>
+        <item>After you have selected an exercise category and subcategory, the individual exercises come up as single questions.
+            You can swipe right to select the question you want to answer.\nYou then press record now - or if you would rather -
+            schedule the exercise for later using the calendar icon.\nYou can see your queued exercises on the ‘More’ tab.</item>
+        <item>After recording, then you rate your mood, from ‘the best’ to ‘the worst’ or grades in between using the wheel. You
+            then give the video a feeling - these are taken from Plutchik, a recognised system of emotional categories.\n\nYou
+            also have the option to add your own free text as tags. These ratings and tags will form an overview of how you are
+            doing so you can track your feelings and emotions.</item>
+        <item>Over time you will be able to track your mood and gain insight on your mental health. In doing so, you will be
+            able to take control again. You can review the videos any time.\n\nSingle click on a point on the graph to show
+            the tags and name of the video - double click on a point to play the video.</item>
+        <item>You can search the videos by date, exercise category, feeling or any of the freeform text you have entered against
+            them.\n\nYou can play the videos and share them with others - but only if you show them yourself on your phone.\n\nThat
+            way you can get an immediate response and you know they’ve been seen.</item>
+        <item>Your data is important to us so we have put policies in place to protect it. We are compliant with the Information
+            Commissioners Office.\n\nWe make our Terms and Conditions and Privacy Policy available on our website as well as in
+            the app here.</item>
+        <item>Your data remains yours, and you can download the videos at any time.\nYou also have the right to delete your data
+            when you delete the app.\n\nWe wouldn’t want our time together to be cut short, but if you did want to leave we aim
+            to make it easy for you.</item>
+        <item>You can customise your profile to make it useful to you.\n\nYou might want to set a reminder to record Mental Snapp, daily, every
+            few days, or weekly. It’s up to you.</item>
+        <item>Sometimes recording a diary is boring, sometimes it’s a chore. It’s an everyday thing, part of the routine.In the poem
+            Born Yesterday, Phillip Larkin reflects on what it is to be ordinary. The poem ends;\n\n\"… may you be dull -\nIf that
+            is what a skilled,\nVigilant, flexible,\nUnemphasised, enthralled\nCatching of happiness is called.\"</item>
+        <item>Tap here for our guide to recording your first videos</item>
+    </string-array>
+
+    <string-array name="record_title_array">
+        <item>Say hello</item>
+        <item>How did that feel?</item>
+        <item>What’s your response?</item>
+        <item>Your stats</item>
+        <item>Who are you speaking to?</item>
+        <item>Congratulations!</item>
+    </string-array>
+
+    <string-array name="record_description_array">
+        <item>This is your first video diary. Say hello to yourself, to Mental Snapp, introduce yourself, see how it feels. Then
+            rate your mood, tag it with feelings, upload. Well done.</item>
+        <item>When you’re ready, it’s time to record again. How did making that first recording feel? Was it what you were
+            expecting? Is there anything that surprised you? Rate your mood again, tag the feelings, and you’re done.</item>
+        <item>Have you watched yourself back yet? Take some time to watch one or both of the recordings that you’ve made, in
+            preparation to make another one. How does it feel watching yourself back? Have you learnt anything? Any surprises?
+            Tag and upload. Well done.</item>
+        <item>You’re building up a picture of your current state. Look at your stats page, and record a response. Do they seem
+            to reflect where you are at the moment? What would you add or take away? Tell the story of how you were then, and
+            how you are today.</item>
+        <item>You’re building a relationship with yourself as if you were a friend, seeing yourself from the outside. Does this
+            feel like a new way to relate to yourself? What are you learning? Who are you speaking to when you record your own
+            story? Rate your mood, tag your feelings.</item>
+        <item>You’ve reached the end of this guide, but are at the very beginning of your journey to record your own story. In
+            a total of 10 short minutes, you have rated your mood and logged your story 5 times. That process encourages ‘
+            metacognition’ - thinking about thinking - which is a skill that will stand you in good stead in the future. Well
+            done. Keep going.</item>
+    </string-array>
+</resources>

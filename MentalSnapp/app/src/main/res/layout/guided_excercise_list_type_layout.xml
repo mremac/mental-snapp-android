@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/guided_excercise_recycler"
+        android:layout_below="@+id/exercise_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/exercise_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_large_margin"
+        android:layout_marginRight="@dimen/view_large_margin"
+        android:textSize="@dimen/font_small"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/color_gray"/>
+
+
+    <RelativeLayout
+        android:id="@+id/no_data_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/basic_view_margin"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/calendar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calendar_icon_big"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/calendar_btn"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/record_btn_big"
+            android:layout_alignTop="@+id/calendar_btn"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

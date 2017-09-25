@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="moodArray">
+        <item>T Best</item>
+        <item>V Good</item>
+        <item>Good</item>
+        <item>OK</item>
+        <item>Bad</item>
+        <item>V Bad</item>
+        <item>T Worst</item>
+
+    </string-array>
+</resources>

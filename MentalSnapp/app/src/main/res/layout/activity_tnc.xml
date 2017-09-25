@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_semi_large"
+                android:textColor="@color/color_gray"
+                android:text="@string/terms_message1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/color_gray"
+                android:text="@string/terms_message2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/color_gray"
+                android:layout_marginTop="@dimen/view_large_margin"
+                android:text="@string/terms_message3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/color_gray"
+                android:layout_marginTop="@dimen/view_large_margin"
+                android:text="@string/terms_message4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/color_gray"
+                android:layout_marginTop="@dimen/view_large_margin"
+                android:text="@string/terms_message5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/color_gray"
+                android:layout_marginTop="@dimen/view_large_margin"
+                android:text="@string/terms_message6"/>
+
+            <TextView
+                android:id="@+id/tnc_message_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/color_gray"
+                android:layout_marginTop="@dimen/view_large_margin"
+                android:layout_marginBottom="@dimen/view_large_margin"
+                android:text="@string/terms_message7"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

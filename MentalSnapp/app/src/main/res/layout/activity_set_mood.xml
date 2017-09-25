@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/set_mood_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:id="@+id/profile_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/set_mood_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_large" />
+
+            <ImageView
+                android:id="@+id/upload_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/view_large_margin"
+                android:src="@drawable/upload_tap_effect" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/add_video_name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:fontFamily="sans-serif"
+                android:hint="@string/add_video_name"
+                android:paddingBottom="@dimen/basic_view_margin"
+                android:paddingLeft="@dimen/basic_view_margin"
+                android:paddingTop="@dimen/basic_view_margin"
+                android:textColor="@color/color_gray"
+                android:textColorHint="@color/gray_hint_2"
+                android:textSize="@dimen/font_medium" />
+
+            <RelativeLayout
+                android:id="@+id/circular_seek_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/add_video_name_edittext"
+                android:layout_weight="80"
+                android:background="@drawable/seek_bg">
+
+                <com.mentalsnapp.com.mentalsnapp.views.CircularSeekBar
+                    android:id="@+id/circular_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/wheel_blank"
+                    app:circle_progress_color="@null"
+                    app:circle_stroke_width="0dp"
+                    app:end_angle="270"
+                    app:max="100"
+                    app:pointer_alpha_ontouch="@null"
+                    app:pointer_color="@android:color/transparent"
+                    app:pointer_halo_border_width="6dp"
+                    app:pointer_halo_color="@android:color/white"
+                    app:start_angle="270" />
+
+                <TextView
+                    android:id="@+id/mood_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <!--<SeekBar
+                android:id="@+id/circular_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_tags"
+                android:progressDrawable="@drawable/circular_seek_bar_shape"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+
+                <TextView
+                    android:id="@+id/add_feelings_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tap_effect_layout"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="@dimen/basic_view_margin"
+                    android:paddingLeft="@dimen/basic_view_margin"
+                    android:paddingTop="@dimen/basic_view_margin"
+                    android:text="@string/add_feelings"
+                    android:textColor="@color/color_gray" />
+
+                <View
+                    android:id="@+id/selected_feeling_color"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/add_feelings_btn"
+                    android:layout_marginRight="@dimen/view_large_margin"
+                    android:layout_marginTop="@dimen/basic_view_margin" />
+
+                <View
+                    android:id="@+id/dividor"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/add_feelings_btn"
+                    android:background="@color/light_gray" />
+
+                <EditText
+                    android:id="@+id/mood_description_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/dividor"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="top"
+                    android:hint="@string/add_feeling_description_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLength="160"
+                    android:minLines="10"
+                    android:padding="@dimen/basic_view_margin"
+                    android:textColor="@color/color_gray"
+                    android:textColorHint="@color/color_gray"
+                    android:textSize="@dimen/font_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

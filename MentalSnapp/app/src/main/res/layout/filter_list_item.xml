@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/tap_effect_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/basic_view_margin"
+        android:textSize="@dimen/font_small"
+        android:gravity="start"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/check_mark"
+        android:textColor="@color/color_gray"/>
+
+        <ImageView
+            android:id="@+id/check_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_mark"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/view_large_margin"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/light_gray"/>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <RelativeLayout
+            android:id="@+id/profile_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_large"
+                android:fontFamily="sans-serif"
+                android:text="@string/feelings_title"/>
+
+            <ImageView
+                android:id="@+id/done_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/done_tap_effect"
+                android:background="@drawable/tap_effect_layout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/view_large_margin"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/light_green"
+        android:paddingTop="@dimen/basic_view_margin"
+        android:drawablePadding="4dp"
+        android:hint="@string/search"
+        android:paddingBottom="@dimen/basic_view_margin"
+        android:drawableLeft="@drawable/search_icon"
+        android:paddingLeft="@dimen/basic_view_margin"
+        android:layout_marginBottom="@dimen/basic_view_margin"/>
+
+    <ImageView
+        android:id="@+id/cross_clear_add_feeling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/basic_view_margin"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/cross_dark"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feeling_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_text"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

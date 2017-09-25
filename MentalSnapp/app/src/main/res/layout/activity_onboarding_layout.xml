@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onboarding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/basic_view_margin"
+        android:layout_marginRight="@dimen/basic_view_margin"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/font_medium"
+        android:padding="@dimen/indicator_height"
+        android:text="@string/skip"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/onboarding_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/basic_view_margin"
+        android:layout_above="@+id/onboarding_progress"/>
+
+    <ImageView
+        android:id="@+id/onboarding_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/view_large_margin"/>
+</RelativeLayout>

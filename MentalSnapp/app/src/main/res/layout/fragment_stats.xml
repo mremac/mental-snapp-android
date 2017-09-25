@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="@dimen/basic_view_margin"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/monthText"
+        android:textColor="#0FAEC6"
+        android:textSize="@dimen/font_medium"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/basic_view_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/basic_view_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CFEDF2"
+        android:id="@+id/lineChartLayout"
+        android:paddingBottom="@dimen/basic_view_margin"
+        android:paddingLeft="@dimen/indicator_height"
+        android:paddingRight="@dimen/indicator_height">
+
+        <TextView
+            android:textSize="@dimen/font_medium"
+            android:id="@+id/monthAnalysisText"
+            android:layout_marginTop="@dimen/basic_view_margin"
+            android:textColor="@color/color_black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="@dimen/basic_view_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/basic_view_margin"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/feeling_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="@dimen/basic_view_margin"
+            android:paddingBottom="@dimen/basic_view_margin"/>
+
+        <ImageView
+            android:id="@+id/previous_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_large_margin"
+            android:src="@drawable/previous_tap_effect"/>
+
+        <ImageView
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/view_large_margin"
+            android:src="@drawable/next_tap_effect"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:id="@+id/noContentView"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="@dimen/font_medium"
+            android:textColor="@color/color_black"
+            android:layout_centerInParent="true"
+            android:text="No stats to display"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

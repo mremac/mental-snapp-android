@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_view_margin">24dp</dimen>
+
+
+    <!--<dimen name="small_view_margin">18dp</dimen>-->
+    <dimen name="text_large_margin">34dp</dimen>
+    <dimen name="image_view_margin">40dp</dimen>
+
+    <!--font sizes-->
+    <dimen name="font_xsmall">11sp</dimen>
+    <dimen name="font_small">13sp</dimen>
+    <dimen name="font_medium">15sp</dimen>
+    <dimen name="font_semi_large">18sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_xlarge">26sp</dimen>
+    <dimen name="view_large_margin">20dp</dimen>
+
+    <dimen name="profile_pic_dimen">100dp</dimen>
+
+</resources>

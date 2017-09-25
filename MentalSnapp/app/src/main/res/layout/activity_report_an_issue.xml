@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/issue_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/issue_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_large_margin"
+                        android:layout_marginRight="@dimen/view_large_margin"
+                        android:layout_marginTop="@dimen/view_large_margin"
+                        android:textColorHint="@color/orange"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/issue_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_border"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="@string/issue_title"
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:textColor="@color/color_gray"
+                            android:textColorHint="@color/orange"
+                            android:textSize="@dimen/font_medium" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/cross_clear_issue_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/issue_input_layout"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/basic_view_margin"
+                        android:layout_marginRight="@dimen/basic_view_margin"
+                        android:src="@drawable/cross_button"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/description_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/issue_title_layout"
+                    android:layout_marginLeft="@dimen/view_large_margin"
+                    android:layout_marginTop="@dimen/view_large_margin"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/description"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_medium" />
+
+                <EditText
+                    android:id="@+id/description_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/description_text"
+                    android:layout_marginLeft="@dimen/view_large_margin"
+                    android:layout_marginRight="@dimen/view_large_margin"
+                    android:layout_marginTop="@dimen/basic_view_margin"
+                    android:background="@drawable/edittext_shape"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="top"
+                    android:hint="@string/write_your_text"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:padding="@dimen/basic_view_margin"
+                    android:textColor="@color/color_gray"
+                    android:textColorHint="@color/grey_hint"
+                    android:textSize="@dimen/font_medium" />
+
+                <RelativeLayout
+                    android:id="@+id/attach_image_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/indicator_height"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/tap_effect_layout"
+                    android:layout_alignLeft="@+id/description_edittext"
+                    android:layout_below="@id/description_edittext"
+                    android:layout_marginTop="@dimen/basic_view_margin">
+
+                    <ImageView
+                        android:id="@+id/attach_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/attach_icon" />
+
+                    <TextView
+                        android:id="@+id/attach_image_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/basic_view_margin"
+                        android:layout_toRightOf="@+id/attach_icon"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/attach_image"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/font_medium" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/clear_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:background="@drawable/tap_effect_layout"
+                    android:layout_marginTop="@dimen/basic_view_margin"
+                    android:layout_below="@+id/description_edittext"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/basic_view_margin"
+                    android:src="@drawable/delete_btn"/>
+
+                <ImageView
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_below="@+id/attach_image_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/view_large_margin"
+                    android:layout_marginTop="@dimen/image_view_margin"
+                    android:background="@drawable/submit_tap_effect" />
+
+                <TextView
+                    android:id="@+id/feedback_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/tap_effect_blue"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="@dimen/font_medium"
+                    android:layout_marginBottom="@dimen/basic_view_margin"
+                    android:text="@string/email_feedback"/>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

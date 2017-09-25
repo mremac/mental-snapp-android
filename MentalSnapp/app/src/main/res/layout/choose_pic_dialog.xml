@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/delete_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/text_delete_photo"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/font_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/artwork_image"
+        android:background="@color/grey_hint" />
+
+    <TextView
+        android:id="@+id/take_photo_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/text_photo_library"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/font_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/artwork_image"
+        android:background="@color/grey_hint" />
+
+    <TextView
+        android:id="@+id/take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/text_take_photo"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/font_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/artwork_image"
+        android:background="@color/grey_hint" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/text_cancel"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/font_medium" />
+</LinearLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/exercise_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_effect_layout">
+
+        <ImageView
+            android:id="@+id/exercise_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:src="@drawable/queued_exercise_icon" />
+
+        <TextView
+            android:id="@+id/exercise_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/exercise_icon"
+            android:layout_toRightOf="@+id/exercise_icon"
+            android:drawableRight="@drawable/forward_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/queued_exercises"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/exercise_icon"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/exercise_icon"
+            android:layout_toRightOf="@+id/exercise_icon"
+            android:background="@color/dividor_color_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_effect_layout">
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:src="@drawable/profile_icon" />
+
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/profile_icon"
+            android:layout_toRightOf="@+id/profile_icon"
+            android:drawableRight="@drawable/forward_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/profile"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/profile_icon"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/profile_icon"
+            android:layout_toRightOf="@+id/profile_icon"
+            android:background="@color/dividor_color_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/report_an_issue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_effect_layout">
+
+        <ImageView
+            android:id="@+id/report_an_issue_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:src="@drawable/report_icon" />
+
+        <TextView
+            android:id="@+id/report_an_issue_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/report_an_issue_icon"
+            android:layout_toRightOf="@+id/report_an_issue_icon"
+            android:drawableRight="@drawable/forward_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/report_an_issue"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/report_an_issue_icon"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/report_an_issue_icon"
+            android:layout_toRightOf="@+id/report_an_issue_icon"
+            android:background="@color/dividor_color_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tnc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_effect_layout">
+
+        <ImageView
+            android:id="@+id/tnc_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:src="@drawable/tnc_icon" />
+
+        <TextView
+            android:id="@+id/tnc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/tnc_icon"
+            android:layout_toRightOf="@+id/tnc_icon"
+            android:drawableRight="@drawable/forward_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/tnc_title"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tnc_icon"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/tnc_icon"
+            android:layout_toRightOf="@+id/tnc_icon"
+            android:background="@color/dividor_color_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/privacy_policy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_effect_layout">
+
+        <ImageView
+            android:id="@+id/privacy_policy_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:src="@drawable/privacy_policy_icon" />
+
+        <TextView
+            android:id="@+id/privacy_policy_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/privacy_policy_icon"
+            android:layout_toRightOf="@+id/privacy_policy_icon"
+            android:drawableRight="@drawable/forward_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/privacy_policy_title"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/privacy_policy_icon"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/privacy_policy_icon"
+            android:layout_toRightOf="@+id/privacy_policy_icon"
+            android:background="@color/dividor_color_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/onboarding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_effect_layout">
+
+        <ImageView
+            android:id="@+id/onboarding_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:src="@drawable/onboard_icon" />
+
+        <TextView
+            android:id="@+id/onboarding_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/onboarding_icon"
+            android:layout_toRightOf="@+id/onboarding_icon"
+            android:drawableRight="@drawable/forward_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/onboarding_title"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/onboarding_icon"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/onboarding_icon"
+            android:layout_toRightOf="@+id/onboarding_icon"
+            android:background="@color/dividor_color_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/record_onboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tap_effect_layout">
+
+        <ImageView
+            android:id="@+id/record_onboard_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:src="@drawable/record_small" />
+
+        <TextView
+            android:id="@+id/record_onboard_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/record_onboard_icon"
+            android:layout_toRightOf="@+id/record_onboard_icon"
+            android:drawableRight="@drawable/forward_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/record_onboard_title"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/record_onboard_icon"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/record_onboard_icon"
+            android:layout_toRightOf="@+id/record_onboard_icon"
+            android:background="@color/dividor_color_2" />
+    </RelativeLayout>
+</LinearLayout>

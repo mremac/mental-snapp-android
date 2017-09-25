@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SwipeTabTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/color_white</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <item name="colorAccent">@color/color_white</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/grey_hint</item>
+        <item name="colorControlActivated">@color/grey_hint</item>
+        <item name="colorControlHighlight">@color/grey_hint</item>
+    </style>
+
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#9e9e9e</item>
+        <item name="colorAccent">@color/color_gray</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+    <style name="AlertDialogTheme" parent="AlertDialogTheme">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+    <style name="searchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/search_icon_blue</item>
+        <item name="closeIcon">@drawable/cross_button</item>
+        <item name="goIcon">@drawable/search_icon_blue</item>
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:drawablePadding">@dimen/indicator_height</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+</resources>

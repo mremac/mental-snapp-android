@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/basic_view_margin"
+    android:background="@drawable/shape_rounded_rectangle"
+    android:padding="@dimen/basic_view_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/basic_view_margin"
+            android:layout_marginTop="@dimen/indicator_height"
+            android:padding="@dimen/indicator_height"
+            android:text="@string/text_cancel"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_semi_large" />
+
+        <TextView
+            android:id="@+id/done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/basic_view_margin"
+            android:layout_marginTop="@dimen/indicator_height"
+            android:padding="@dimen/indicator_height"
+            android:text="@string/done"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_semi_large" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/month_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants" />
+
+        <NumberPicker
+            android:id="@+id/year_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants" />
+
+        <NumberPicker
+            android:id="@+id/day_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants" />
+    </LinearLayout>
+</LinearLayout>

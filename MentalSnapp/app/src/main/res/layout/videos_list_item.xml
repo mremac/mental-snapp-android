@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/basic_view_margin"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/feeling_color"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/basic_view_margin"/>
+
+        <TextView
+            android:id="@+id/feeling_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/basic_view_margin"
+            android:layout_toRightOf="@+id/feeling_color"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/font_medium" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/basic_view_margin">
+
+        <ImageView
+            android:id="@+id/video_thumbnial_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/indicator_height"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/tap_effect_layout_light"
+            android:src="@drawable/play_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:orientation="horizontal"
+            android:padding="@dimen/basic_view_margin">
+
+            <ImageView
+                android:id="@+id/download_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tap_effect_layout_light"
+                android:padding="@dimen/indicator_height"
+                android:src="@drawable/download_btn" />
+
+            <ImageView
+                android:id="@+id/delete_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/basic_view_margin"
+                android:background="@drawable/tap_effect_layout_light"
+                android:padding="@dimen/indicator_height"
+                android:src="@drawable/delete_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/view_large_margin"
+            android:layout_marginBottom="@dimen/basic_view_margin"
+            android:textSize="@dimen/font_small"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+</LinearLayout>

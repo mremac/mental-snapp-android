@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mentalsnapp.com.mentalsnapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <activity android:name=".activities.BaseActivity"/>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.SelectedExerciseDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.ReportAnIssueActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.TnCActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.PrivacyPolicyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.QueuedExerciseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.SetMoodActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.AddFeelingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.PlayVideoActivity"/>
+        <activity android:name=".activities.AlertDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+        <activity android:name=".activities.OnboardingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.RecordOnboardingActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".utils.AlarmReceiver"/>
+
+        <!-- Optionally, register AnalyticsReceiver and AnalyticsService to support background
+      dispatching on non-Google Play devices -->
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <service android:name= "com.amazonaws.mobileconnectors.s3.transferutility.TransferService" android:enabled="true" />
+    </application>
+
+</manifest>

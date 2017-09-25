@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "188104800404",
+    "project_id": "mentalsnapp-160313"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188104800404:android:e4963ada51c3a323",
+        "android_client_info": {
+          "package_name": "com.mentalsnapp.com.mentalsnapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188104800404-dem0rds4thdt06r1tddgb13vi8br4fpb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mentalsnapp.com.mentalsnapp",
+            "certificate_hash": "93dcd85b6ce2597e09465f79f3029b32fd0a42e4"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAskV65pnLVU6VfOWW2367ph1oNinS-Tow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-92763376-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

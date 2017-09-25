@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onboaring_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/onboarding_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/onboarding_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/onboarding_image_layout"
+        android:layout_above="@+id/record_btn"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/enjoy_telling_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_large_margin"
+                android:layout_marginRight="@dimen/view_large_margin"
+                android:layout_marginTop="@dimen/view_large_margin"
+                android:clickable="false"
+                android:gravity="start"
+                android:text="@string/enjoy_telling_your_story"
+                android:visibility="gone"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/onboarding_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_large_margin"
+                android:layout_marginRight="@dimen/view_large_margin"
+                android:layout_marginTop="@dimen/view_large_margin"
+                android:layout_below="@+id/enjoy_telling_msg"
+                android:clickable="false"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="start"
+                android:textColor="@color/tap_effect"
+                android:textSize="@dimen/font_semi_large" />
+
+            <TextView
+                android:id="@+id/onboarding_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/onboarding_title"
+                android:layout_marginBottom="@dimen/view_large_margin"
+                android:layout_marginLeft="@dimen/view_large_margin"
+                android:layout_marginRight="@dimen/view_large_margin"
+                android:layout_marginTop="@dimen/basic_view_margin"
+                android:clickable="false"
+                android:gravity="start"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/font_medium" />
+
+            <ImageView
+                android:id="@+id/sign_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/onboarding_description"
+                android:src="@drawable/sign"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/record_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/record_btn_big"
+        android:layout_marginTop="@dimen/indicator_height"
+        android:layout_marginBottom="@dimen/basic_view_margin"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+</RelativeLayout>
