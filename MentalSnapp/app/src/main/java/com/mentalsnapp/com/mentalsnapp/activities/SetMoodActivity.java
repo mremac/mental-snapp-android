@@ -30,13 +30,15 @@ import android.widget.Toast;
 
 import com.amazonaws.mobileconnectors.s3.transferutility.TransferListener;
 import com.amazonaws.mobileconnectors.s3.transferutility.TransferState;
+import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 import com.mentalsnapp.com.mentalsnapp.R;
+import com.mentalsnapp.com.mentalsnapp.app.MentalSnappApp;
 import com.mentalsnapp.com.mentalsnapp.network.ApiClient;
 import com.mentalsnapp.com.mentalsnapp.network.response.SetMoodResponse;
-import com.mentalsnapp.com.mentalsnapp.utils.AWSHelper;
+import com.mentalsnapp.com.mentalsnapp.utils.AWSUploadService;
 import com.mentalsnapp.com.mentalsnapp.utils.Constants;
 import com.mentalsnapp.com.mentalsnapp.utils.JsonToStringConverter;
 import com.mentalsnapp.com.mentalsnapp.utils.LogHelper;
@@ -57,6 +59,8 @@ import java.util.Locale;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import com.google.android.gms.analytics.HitBuilders;
 
 /**
  * Created by gchandra on 3/1/17.
@@ -82,6 +86,7 @@ public class SetMoodActivity extends BaseActivity {
     private static String mMoodValue = "0";
     private String mSelectedFeelingId;
     private String finalVideoName;
+    private Tracker mTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,9 +96,26 @@ public class SetMoodActivity extends BaseActivity {
         registerViews();
         initialiseVariables();
         attachListeners();
+
+        // Obtain the shared Tracker instance.
+        MentalSnappApp application = (MentalSnappApp) getApplication();
+        mTracker = application.getDefaultTracker();
+    }
+
+    protected void onResume() {
+        super.onResume();
+        String name = "setmood";
+        Log.i("info", "Setting screen name: " + name);
+        mTracker.setScreenName("Image~" + name);
+        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
     private void readyVideoFile() {
+        mTracker.send(new HitBuilders.EventBuilder()
+                .setCategory("Action")
+                .setAction("upload")
+                .build());
+
         if (mActualVideoUri != null) {
             String pathFromUri = getPathFromURI(mActualVideoUri);
             Bitmap bitmap = ThumbnailUtils.createVideoThumbnail(pathFromUri, MediaStore.Video.Thumbnails.MICRO_KIND);
@@ -149,7 +171,7 @@ public class SetMoodActivity extends BaseActivity {
 
     private void uploadVideoThumbnail() {
         if (mCoverUrlFile != null) {
-            AWSHelper.uploadFile(mContext, mCoverUrlFile, Constants.VIDEO_THUMBNAIL_UPLOAD_PATH, mTransferListenerVideoThumbnail);
+            AWSUploadService.uploadFile(mContext, mCoverUrlFile, Constants.VIDEO_THUMBNAIL_UPLOAD_PATH, mTransferListenerVideoThumbnail);
         }
     }
 
@@ -199,7 +221,7 @@ public class SetMoodActivity extends BaseActivity {
                 LogHelper.logInfo(mContext, "mResponseCallback", JsonToStringConverter.convertToJson(response.body()));
                 mProgressBarLayout.setVisibility(View.GONE);
                 Toast.makeText(mContext, "Uploaded successfully", Toast.LENGTH_LONG).show();
-                sendDetailsForAnalytics();
+//                sendDetailsForAnalytics();
                 openHomeScreen();
             } else {
                 try {
@@ -518,7 +540,9 @@ public class SetMoodActivity extends BaseActivity {
         if (newFileName != null) {
             mProgressBarLayout.setVisibility(View.VISIBLE);
 //            new upload().execute();
-            AWSHelper.uploadFile(mContext, newFileName, Constants.VIDEO_UPLOAD_PATH, mTransferListenerVideo);
+            AWSUploadService.uploadFile(mContext, newFileName, Constants.VIDEO_UPLOAD_PATH, mTransferListenerVideo);
+            mProgressBarLayout.setVisibility(View.GONE);
+            openHomeScreen();
         }
     }
 
